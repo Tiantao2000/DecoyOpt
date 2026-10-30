@@ -49,10 +49,7 @@ CUDA_VISIBLE_DEVICES=0 decoyopt cache --device cuda:0
 The command downloads the ProtT5 model to `cache/models/` and writes
 `cache/shared_ids.txt`, `cache/ProtT5-XL-UniRef50.f32` and `cache/metadata.json`.
 Features have 1024 dimensions, with mean pooling over residue tokens, excluding
-padding and special tokens. Preprocessing matches the original cache: uppercase,
-UZOBJ → X and a 1024-token limit. GPU inference uses bfloat16 when supported,
-otherwise float16; the matrix is stored as float32. All 15 models share it.
-Run the same command to resume interrupted generation.
+padding and special tokens.
 
 Use `--batch-size 2` to reduce GPU memory, or `--model /path/to/prot_t5_xl_uniref50`
 to load an existing local model.
