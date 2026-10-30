@@ -7,3 +7,9 @@ checkpoints/
 results/
 dist/
 .smoke-*/
+
+# Local release and verification files
+/docs/
+/tests/
+/tools/
+/installation_commands.txt

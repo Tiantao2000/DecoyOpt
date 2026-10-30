@@ -1,3 +1,0 @@
-mamba create -n decoyopt_codex python=3.10 pip -y
-mamba activate decoyopt_codex
-python -m pip install -e .
